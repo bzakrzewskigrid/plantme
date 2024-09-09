@@ -17,6 +17,7 @@ export default {
       'primary-grey': '#00000099',
       'primary-light-grey': '#11111180',
       'footer-light-grey': '#E9E9E9',
+      'background-light-grey': '#F9F9F9',
     },
   },
   plugins: [],
