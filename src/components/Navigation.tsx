@@ -15,17 +15,18 @@ export const Navigation = () => {
           <NavListItem hasSeparator={false}>
             <a href="about-us">About us</a>
           </NavListItem>
+
           <NavListItem>
             <a href="contact-=us">Contact us</a>
           </NavListItem>
           <NavListItem>
             <a href="blog">Blog</a>
           </NavListItem>
-          <NavListItem>
+          <NavListItem className="max-md:hidden">
             <a href="site-map">Site Map</a>
           </NavListItem>
 
-          <NavListItem>
+          <NavListItem className="max-md:hidden">
             <LanguageSelect />
           </NavListItem>
         </ul>

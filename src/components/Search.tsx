@@ -2,7 +2,7 @@ import searchIcon from '../assets/icons/search-icon--white.svg';
 
 export const Search = () => {
   return (
-    <form className="flex min-w-96 max-xl:w-full">
+    <form className="flex min-w-96 max-xl:w-full max-md:min-w-0">
       <input
         type="text"
         placeholder="Search this site"
