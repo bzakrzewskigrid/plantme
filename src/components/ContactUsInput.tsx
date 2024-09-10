@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, FormEventHandler } from 'react';
 
 interface IContactUsInput {
   required?: boolean;
@@ -6,6 +6,7 @@ interface IContactUsInput {
   placeholder: string;
   name: string;
   type: HTMLInputElement['type'];
+  errorMessage: string;
   className?: string;
 }
 
@@ -15,8 +16,17 @@ export const ContactUsInput: FC<IContactUsInput> = ({
   placeholder,
   name,
   type,
+  errorMessage,
   className,
 }) => {
+  const handleOnInvalid: FormEventHandler<HTMLInputElement> = (e) => {
+    (e.target as HTMLInputElement).setCustomValidity(errorMessage);
+  };
+
+  const handleOnInput: FormEventHandler<HTMLInputElement> = (e) => {
+    (e.target as HTMLInputElement).setCustomValidity('');
+  };
+
   return (
     <div className={`flex flex-col gap-2 ${className}`}>
       <label htmlFor={name}>
@@ -24,6 +34,8 @@ export const ContactUsInput: FC<IContactUsInput> = ({
         <span>{label}</span>
       </label>
       <input
+        onInvalid={handleOnInvalid}
+        onInput={handleOnInput}
         type={type}
         name={name}
         id={name}

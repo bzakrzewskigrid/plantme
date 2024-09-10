@@ -50,11 +50,37 @@ export const ContactUs = () => {
 
         <form className="bg-white w-2/3 px-6 py-12 rounded-r-lg  max-xl:w-full">
           <div className="grid gap-4 grid-cols-2 max-xl:grid-cols-1 mb-6">
-            <ContactUsInput required name="firstName" label="First Name" placeholder="John" type="string" />
-            <ContactUsInput required name="lastName" label="Last Name" placeholder="Doe" type="string" />
-            <ContactUsInput name="email" label="Email" placeholder="example@gmail.com" type="email" />
+            <ContactUsInput
+              required
+              name="firstName"
+              label="First Name"
+              placeholder="John"
+              type="string"
+              errorMessage="This field is required. Please provide a first name."
+            />
+            <ContactUsInput
+              required
+              name="lastName"
+              label="Last Name"
+              placeholder="Doe"
+              type="string"
+              errorMessage="This field is required. Please provide last name."
+            />
+            <ContactUsInput
+              name="email"
+              label="Email"
+              placeholder="example@gmail.com"
+              type="email"
+              errorMessage="Please provide a valid email."
+            />
             {/* todo: Add selecting phone prefix */}
-            <ContactUsInput name="phoneNumber" label="Phone Number" placeholder="00 000 00 00" type="tel" />
+            <ContactUsInput
+              name="phoneNumber"
+              label="Phone Number"
+              placeholder="00 000 00 00"
+              type="tel"
+              errorMessage="Please provide a valid phone."
+            />
           </div>
 
           <fieldset id="role" className="flex gap-8 mb-6 flex-wrap">
