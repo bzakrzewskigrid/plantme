@@ -19,7 +19,7 @@ export default {
       'primary-light-grey': '#11111180',
       'footer-light-grey': '#E9E9E9',
       'background-light-grey': '#F9F9F9',
-      red: '#ff0000',
+      red: '#b91c1c',
     },
   },
   plugins: [],

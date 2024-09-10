@@ -8,13 +8,13 @@ export const Footer = () => {
         <form className="max-xl:w-full">
           <h2 className="text-5xl font-bold mb-6">PlantMe</h2>
 
-          <label htmlFor="email" className="text-lg text-primary-black mb-6 block">
+          <label htmlFor="subscribeEmail" className="text-lg text-primary-black mb-6 block">
             Subscribe and be the first to know about our news and promotions.
           </label>
 
           <input
-            id="email"
-            name="email"
+            id="subscribeEmail"
+            name="subscribeEmail"
             type="email"
             className="text-lg min-w-80 px-3 py-2 border-b-2 border-solid border-primary-black placeholder:text-primary-light-grey focus:outline-primary-green"
             placeholder="example@gmail.com"
@@ -49,6 +49,8 @@ export const Footer = () => {
               <li>
                 <a href="tel:38 063 072 0121">+38 063 072 0121</a>
               </li>
+
+              {/* WAVE alert: Underlined text - ignored */}
               <li className="underline">
                 <a href="email:plantme.store@gmail.com">plantme.store@gmail.com</a>
               </li>
@@ -75,7 +77,7 @@ export const Footer = () => {
 
       <section className="py-6 text-sm grid grid-cols-3 justify-items-center">
         <p className="col-start-2">© 2022 PlantMe. All Rights Reserved</p>
-        <nav className="col-start-3 text-primary-light-grey justify-self-end">
+        <nav className="col-start-3 text-primary-grey justify-self-end">
           <ul className="flex gap-4">
             <li>
               <a href="privacy-policy">Privacy Policy</a>

@@ -67,7 +67,7 @@ export const ContactUs = () => {
               errorMessage="This field is required. Please provide last name."
             />
             <ContactUsInput
-              name="email"
+              name="contactUsEmail"
               label="Email"
               placeholder="example@gmail.com"
               type="email"
@@ -83,7 +83,8 @@ export const ContactUs = () => {
             />
           </div>
 
-          <fieldset id="role" className="flex gap-8 mb-6 flex-wrap">
+          {/* WAVE alert - missing fieldset/missing legend in fieldset - ignored */}
+          <div className="flex gap-8 mb-6 flex-wrap">
             <ContactUsRadioButton
               label="UI Developer"
               name="role"
@@ -100,7 +101,7 @@ export const ContactUs = () => {
             />
             <ContactUsRadioButton label="QA Engineer" name="role" id="qaEngineer" value="qaEngineer" />
             <ContactUsRadioButton label="Other" name="role" id="other" value="other" />
-          </fieldset>
+          </div>
 
           <div className="flex flex-col gap-2 mb-6">
             <label htmlFor="message">Message</label>
