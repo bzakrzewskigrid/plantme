@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="px-16">
       <section className="py-6 flex justify-between flex-wrap gap-16 max-xl:justify-normal">
         <form className="max-xl:w-full">
-          <h3 className="text-5xl font-bold mb-6">PlantMe</h3>
+          <h2 className="text-5xl font-bold mb-6">PlantMe</h2>
 
           <p className="text-lg text-primary-black mb-6">
             Subscribe and be the first to know about our news and promotions.
@@ -42,7 +42,7 @@ export const Footer = () => {
 
         <div className="text-lg">
           <p className="mb-2">Contacts</p>
-          <nav className="text-primary-grey ">
+          <nav className="text-primary-grey">
             <ul className="flex flex-col gap-2">
               <li>
                 <a href="tel:38 063 072 0121">+38 063 072 0121</a>

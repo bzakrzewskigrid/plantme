@@ -10,6 +10,7 @@ export default {
     colors: {
       'primary-green': '#3A6150',
       'placeholder-green': '#3A6150B2',
+      'background-green': '#71837B',
       black: '#000000',
       'primary-black': '#111111',
       'label-back': '#131516',
@@ -18,6 +19,7 @@ export default {
       'primary-light-grey': '#11111180',
       'footer-light-grey': '#E9E9E9',
       'background-light-grey': '#F9F9F9',
+      red: '#ff0000',
     },
   },
   plugins: [],

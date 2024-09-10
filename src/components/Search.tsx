@@ -6,7 +6,7 @@ export const Search = () => {
       <input
         type="text"
         placeholder="Search this site"
-        className="w-full text-lg px-3 py-2 border-solid border-2 border-primary-green placeholder:text-placeholder-green"
+        className="w-full text-lg px-3 py-2 border-solid border-2 border-primary-green placeholder:text-placeholder-green focus:outline-primary-green"
       />
       <button type="submit" className="bg-primary-green p-4">
         <img src={searchIcon} alt="Search icon" height="19" width="19" />
