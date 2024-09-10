@@ -8,13 +8,15 @@ export const Footer = () => {
         <form className="max-xl:w-full">
           <h2 className="text-5xl font-bold mb-6">PlantMe</h2>
 
-          <p className="text-lg text-primary-black mb-6">
+          <label htmlFor="email" className="text-lg text-primary-black mb-6 block">
             Subscribe and be the first to know about our news and promotions.
-          </p>
+          </label>
 
           <input
+            id="email"
+            name="email"
             type="email"
-            className="text-lg min-w-80 px-3 py-2 border-b-2 border-solid border-primary-black placeholder:text-primary-light-grey"
+            className="text-lg min-w-80 px-3 py-2 border-b-2 border-solid border-primary-black placeholder:text-primary-light-grey focus:outline-primary-green"
             placeholder="example@gmail.com"
           />
 

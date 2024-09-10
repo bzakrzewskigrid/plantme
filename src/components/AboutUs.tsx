@@ -20,7 +20,7 @@ export const AboutUs = () => {
       <AboutUsCard
         title="About Us 2"
         imgSrc={leaves}
-        imgAlt="Dark plant with pretty leaves"
+        imgAlt="Dark plant with long leaves"
         hrefText="Learn more about"
         href="about-us-2"
       >
