@@ -9,6 +9,7 @@ const App = () => {
     <>
       <Navigation />
       <Header />
+      {/* <main role="main">  - redundant */}
       <main>
         <AboutUs />
         <ContactUs />

@@ -16,7 +16,7 @@ export const AboutUsCard = ({ title, imgSrc, imgAlt, children, href, hrefText }:
       <div>
         <h3 className="text-lg font-bold mb-3">{title}</h3>
         <p className="text-sm font-normal mb-5  max-w-lg">{children}</p>
-        <a className="text-sm font-bold underline" href={href}>
+        <a className="text-sm font-bold underline" href={href} aria-label={`Read more about how great ${title} is`}>
           {hrefText} &#8594;
         </a>
       </div>

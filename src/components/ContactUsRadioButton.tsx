@@ -16,6 +16,7 @@ export const ContactUsRadioButton: FC<IContactUsRadioButton> = ({ id, name, valu
         id={id}
         name={name}
         value={value}
+        aria-checked={defaultChecked}
         defaultChecked={defaultChecked}
         className="w-5 h-5 accent-primary-green focus:ring-primary-green m-3 block"
       />

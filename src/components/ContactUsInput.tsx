@@ -40,6 +40,7 @@ export const ContactUsInput: FC<IContactUsInput> = ({
         name={name}
         id={name}
         required
+        aria-required={required}
         placeholder={placeholder}
         className="border-solid border-2 border-primary-black text-sm py-3 px-2 rounded-md placeholder:text-primary-grey focus:outline-primary-green"
       />
