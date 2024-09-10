@@ -55,19 +55,21 @@ export const Footer = () => {
                 <a href="email:plantme.store@gmail.com">plantme.store@gmail.com</a>
               </li>
 
-              <div className="flex gap-8">
-                <li>
-                  <a href="https://www.visa.pl/">
-                    <img src={visaLogo} alt="VISA logo" />
-                  </a>
-                </li>
+              <li className="flex gap-8">
+                <ul>
+                  <li>
+                    <a href="https://www.visa.pl/">
+                      <img src={visaLogo} alt="VISA logo" />
+                    </a>
+                  </li>
 
-                <li>
-                  <a href="https://www.mastercard.pl/pl-pl.html">
-                    <img src={mastercardLogo} alt="Mastercard logo" />
-                  </a>
-                </li>
-              </div>
+                  <li>
+                    <a href="https://www.mastercard.pl/pl-pl.html">
+                      <img src={mastercardLogo} alt="Mastercard logo" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
